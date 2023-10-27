@@ -10,8 +10,19 @@ public class Break : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+<<<<<<< Updated upstream
         if (other.CompareTag("X"))
         {
+=======
+<<<<<<< HEAD
+        if(other.CompareTag("x"))
+        {
+            Debug.Log(121);
+=======
+        if (other.CompareTag("X"))
+        {
+>>>>>>> a44129b2ca2625183fbdddb0af699e178d4f9c6b
+>>>>>>> Stashed changes
             if (this.gameObject.GetComponent<Rigidbody>().velocity.magnitude > 0.01f)
             {
                 other.gameObject.SetActive(false);
